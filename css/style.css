@@ -120,7 +120,7 @@ body {
 
 }
 
-@media (max-width: 200px){
+@media (max-width: 300px){
 body {
   background-color: black;
   background-image: url("../img/human_gross.jpg");
