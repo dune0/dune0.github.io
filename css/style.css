@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-
+  font-family: 'Modern Antiqua', cursive;
 }
 
 body {
@@ -16,14 +16,19 @@ h1{
   letter-spacing: 2px;
 }
 
-#nombrejugador{
+#nombrejugador, #jugadas{
   font-size: 15px;
-  color: lightcyan;
+  color: #01a1ff;
 }
 
 #instrucciones{
+  color: #8ff6ff;
   font-size: 17px;
   text-decoration: underline;
+}
+
+#corona{
+  color: #b9b1dd;
 }
 
 .reglas{
@@ -31,10 +36,9 @@ h1{
   float: left;
 }
 
-.reglas p{
-  color: #ff9ab9;
+#rule {
+  color:  #ff00a7;
   font-size: 12px;
-  list-style: none;
 }
 
 .tabla {
@@ -85,4 +89,59 @@ h1{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 500px) {
+
+body {
+  background-color: black;
+  background-image: url("../img/human_gross.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+
+.main {
+  width: 70%;
+}
+
+.reglas {
+    width: 100%;
+ }
+
+.tabla{
+  width: 100%;
+}
+
+.carta, .back, .front {
+  height: 100px;
+  width: 100px;
+}
+
+}
+
+@media (max-width: 200px){
+body {
+  background-color: black;
+  background-image: url("../img/human_gross.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+
+.main {
+  width: 50%;
+}
+
+.reglas {
+    width: 100%;
+ }
+
+.tabla{
+  width: 100%;
+}
+
+  .carta, .back, .front {
+    height: 80px;
+    width: 80px;
+  }
 }
