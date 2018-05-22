@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: black;
+  background-image: url("../img/human_gross.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+
+
+h1{
+  color: #14e006;
+  letter-spacing: 2px;
+}
+
+#nombrejugador{
+  font-size: 15px;
+  color: lightcyan;
+}
+
+#instrucciones{
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.reglas{
+  width: 400px;
+  float: left;
+}
+
+.reglas p{
+  color: #ff9ab9;
+  font-size: 12px;
+  list-style: none;
+}
+
+.tabla {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.carta {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.carta,
+.back,
+.front {
+  height: 170px;
+  width: 170px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url('../img/carta_oculta.png') no-repeat center center / contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: url('../img/guys.gif') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
