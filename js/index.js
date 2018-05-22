@@ -37,7 +37,7 @@ function cartelito() {
   var alerta;
   var jugador = prompt("Escribí tu nombre para comenzar a jugar:");
     if(jugador == null || jugador == "") {
-        alerta = "Aca iba tu nombre. Me desilucionastes, negri";
+        alerta = "Me desilucionastes, negri";
     }else{
         alerta = "¡Ziiiiiiiiiii, " + jugador + "!";
       }
@@ -95,7 +95,7 @@ var match = function match() {
   
     var clicked = event.target;
     
-        if (clicked.nodeName === 'SECTION' || clicked.parentNode.classList.contains('marcada') || clicked.parentNode.classList.contains('match')) {
+        if (clicked.nodeName === 'SECTION' || clicked.parentNode.classList.contains('selected') || clicked.parentNode.classList.contains('match')) {
         return;
         }
         if (cont < 2) {
