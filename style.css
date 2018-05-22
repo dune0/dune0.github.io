@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Modern Antiqua', cursive;
+}
+
+body {
+  background-image: url("../img/exo_band_.jpg");
+}
+
+
+h1{
+  color: #14e006;
+  letter-spacing: 2px;
+}
+
+#nombrejugador, #jugadas{
+  font-size: 15px;
+  color: #01a1ff;
+}
+
+#instrucciones{
+  color: #8ff6ff;
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+#corona{
+  color: #b9b1dd;
+}
+
+.reglas{
+  width: 30%;
+  float: left;
+}
+
+#rule {
+  color:  #ff00a7;
+  font-size: 12px;
+}
+
+.tabla {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.carta {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.carta,
+.back,
+.front {
+  height: 170px;
+  width: 170px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  border: #ff00a7 1px solid;
+  background-image: url('../img/carta000.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: url('../img/carta1.jpg') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+ 
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 500px) {
+
+body {
+  background-image: url("../img/exo_band_.jpg");
+}
+
+.main {
+  width: 70%;
+}
+
+.reglas {
+    width: 100%;
+ }
+
+.tabla{
+  width: 100%;
+}
+
+.carta, .back, .front {
+  height: 100px;
+  width: 100px;
+}
+
+}
+
+@media (max-width: 200px){
+body {
+  background-image: url("../img/exo_band_.jpg");
+}
+
+.main {
+  width: 50%;
+}
+
+.reglas {
+    width: 100%;
+ }
+
+.tabla{
+  width: 100%;
+}
+
+  .carta, .back, .front {
+    height: 80px;
+    width: 80px;
+  }
+}
